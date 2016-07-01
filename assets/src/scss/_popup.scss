@@ -1,0 +1,143 @@
+/*
+The pop up styles.
+
+@since {{VERSION}}
+*/
+@import "settings";
+
+@keyframes rbpu-popup-swing-out {
+  0% {
+    left: 50%;
+  }
+
+  30% {
+    left: 60%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+.rbpu-popup {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../../images/popup-back.jpg");
+  background-size: cover;
+  transition: opacity 500ms;
+  z-index: 500;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(#000, 0.8);
+    z-index: 500;
+  }
+
+  &.rbpu-popup-opened {
+    opacity: 1;
+  }
+
+  &.rbpu-popup-closed {
+    .rbpu-popup-video-container {
+      animation: rbpu-popup-swing-out 1000ms;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  iframe {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    height: calc(100% - 60px);
+    width: calc(100% - 60px);
+  }
+
+  .rbpu-popup-video-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: $popup-width;
+    height: $popup-height;
+    max-width: 90%;
+    max-height: 90%;
+    background: $primary-color;
+    z-index: 510;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .rbpu-popup-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-8deg) translateX(-40%) translateY(-65%);
+  }
+
+  .rbpu-popup-notice {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1em;
+  }
+
+  .rbpu-popup-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1.5em;
+    height: 1em;
+    margin-top: -0.5em;
+    margin-right: -0.5em;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1em;
+    cursor: pointer;
+
+    &:hover {
+      &:before {
+        top: -10%;
+      }
+    }
+
+    &:active {
+      &:before {
+        top: 10%;
+        transition: top 50ms;
+      }
+    }
+
+    &:before {
+      content: 'X';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: #fff;
+      color: #000;
+      z-index: 520;
+      transition: top 300ms;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 20%;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: #E2E1DE;
+      z-index: 515;
+    }
+  }
+}
