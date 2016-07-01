@@ -15,7 +15,7 @@ class RBPU_PopUp {
 	/**
 	 * The video's URL.
 	 *
-	 * @since {{VERSION}}
+	 * @since 0.1.0
 	 *
 	 * @var string
 	 */
@@ -24,14 +24,14 @@ class RBPU_PopUp {
 	/**
 	 * RBPU_PopUp constructor.
 	 *
-	 * @@since {{VERSION}}
+	 * @@since 0.1.0
 	 */
 	public function __construct() {
 
 		/**
 		 * Pop up video URL.
 		 *
-		 * @since {{VERSION}}
+		 * @since 0.1.0
 		 */
 		$this->video_url = apply_filters( 'rbpu_popup_video_url', get_option( 'rbpu_video_url' ) );
 
@@ -42,7 +42,7 @@ class RBPU_PopUp {
 		/**
 		 * Pop up toggle.
 		 *
-		 * @since {{VERSION}}
+		 * @since 0.1.0
 		 */
 		$toggle = apply_filters( 'rbpu_popup_toggle', get_option( 'rbpu_toggle', 'off' ) );
 
@@ -58,14 +58,14 @@ class RBPU_PopUp {
 	/**
 	 * Outputs the pop up HTML.
 	 *
-	 * @since {{VERSION}}
+	 * @since 0.1.0
 	 */
 	public function output() {
 
 		/**
 		 * Provides the filepath for the pop up HTML.
 		 *
-		 * @since {{VERSION}}
+		 * @since 0.1.0
 		 */
 		$popup_template = apply_filters( 'rbpu_popup_template', ROADBLOCKPOPUP_DIR . 'includes/views/popup.php' );
 

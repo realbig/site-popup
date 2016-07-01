@@ -29,7 +29,7 @@ if ( ! class_exists( 'RoadBlockPopUp' ) ) {
 		/**
 		 * Admin functionality.
 		 *
-		 * @since {{VERSION}}
+		 * @since 0.1.0
 		 *
 		 * @var RoadBlockPopUp_Admin
 		 */
@@ -38,7 +38,7 @@ if ( ! class_exists( 'RoadBlockPopUp' ) ) {
 		/**
 		 * The main popup.
 		 *
-		 * @since {{VERSION}}
+		 * @since 0.1.0
 		 *
 		 * @var RBPU_PopUp
 		 */
@@ -144,7 +144,7 @@ if ( ! class_exists( 'RoadBlockPopUp' ) ) {
 		/**
 		 * Output the assets manually... because ugh.
 		 *
-		 * @since {{VERSION}}
+		 * @since 0.1.0
 		 * @access private
 		 */
 		function add_assets_manually() {

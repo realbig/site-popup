@@ -15,7 +15,7 @@ class RoadBlockPopUp_Admin {
 	/**
 	 * RBPU_PopUp constructor.
 	 *
-	 * @@since {{VERSION}}
+	 * @@since 0.1.0
 	 */
 	public function __construct() {
 
@@ -26,7 +26,7 @@ class RoadBlockPopUp_Admin {
 	/**
 	 * Registers plugin settings.
 	 *
-	 * @since {{VERSION}}
+	 * @since 0.1.0
 	 * @access private
 	 */
 	function register_settings() {
@@ -38,7 +38,7 @@ class RoadBlockPopUp_Admin {
 	/**
 	 * Adds admin menu items.
 	 *
-	 * @since {{VERSION}}
+	 * @since 0.1.0
 	 * @access private
 	 */
 	function admin_menu() {
@@ -55,7 +55,7 @@ class RoadBlockPopUp_Admin {
 	/**
 	 * Outputs the admin page.
 	 *
-	 * @since {{VERSION}}
+	 * @since 0.1.0
 	 * @access private
 	 */
 	function admin_page() {

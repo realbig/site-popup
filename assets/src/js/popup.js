@@ -1,7 +1,7 @@
 /**
  The primary functions for the pop up.
 
- @since {{VERSION}}
+ @since 0.1.0
  */
 
 var RBPU_Popup;
@@ -19,7 +19,7 @@ var RBPU_Popup;
         /**
          * Initializes the pop up functionality.
          *
-         * @since {{VERSION}}
+         * @since 0.1.0
          */
         init: function () {
 
@@ -34,7 +34,7 @@ var RBPU_Popup;
         /**
          * Gets all of the necessary DOM elements.
          *
-         * @since {{VERSION}}
+         * @since 0.1.0
          */
         get_elements: function () {
 
@@ -51,7 +51,7 @@ var RBPU_Popup;
         /**
          * Bindes handlers to elements.
          *
-         * @since {{VERSION}}
+         * @since 0.1.0
          */
         bind_handlers: function () {
 
@@ -65,7 +65,7 @@ var RBPU_Popup;
         /**
          * Opens the pop up.
          *
-         * @since {{VERSION}}
+         * @since 0.1.0
          */
         open: function () {
 
@@ -79,7 +79,7 @@ var RBPU_Popup;
         /**
          * Closes the pop up.
          *
-         * @since {{VERSION}}
+         * @since 0.1.0
          */
         close: function () {
 
